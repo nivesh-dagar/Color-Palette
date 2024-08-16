@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary: #005a76;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+/* TITLE CONTAINER */
+.title-container {
+  background: linear-gradient(
+    111.38deg,
+    #72fbda 35.93%,
+    rgba(251, 251, 251, 0.416667) 152.79%,
+    rgba(237, 237, 237, 0) 236.26%
+  );
+  padding: 20px 0;
+  height: 80px;
+}
+.title-container h1 {
+  font-size: 32px;
+  color: var(--primary);
+  text-align: center;
+}
+
+/* BUTTON CONTAINER */
+.button-container {
+  height: 20vh;
+  display: grid;
+  place-items: center;
+}
+.button-container button {
+  background-color: var(--primary);
+  border: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* COLORS CONTAINER */
+.colors-container {
+  height: calc(80vh - 80px);
+  display: grid;
+  grid-template-rows: 5fr 4fr 3fr 2fr;
+}
+#color1 {
+  background-color: red;
+}
+#color2 {
+  background-color: yellow;
+}
+#color3 {
+  background-color: green;
+}
+#color4 {
+  background-color: blue;
+}
+
+.color-box:hover p {
+  display: inline-block;
+}
+.color-box p {
+  background-color: antiquewhite;
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: end;
+  display: none;
+}
+
+/* RESPONSIVE*/
+@media (max-width: 768px) {
+  .title-container h1 {
+    font-size: 24px;
+  }
+  .button-container button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 350px) {
+  .title-container h1 {
+    font-size: 16px;
+  }
+  .button-container button {
+    font-size: 10px;
+  }
+}
